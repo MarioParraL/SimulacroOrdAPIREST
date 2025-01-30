@@ -17,6 +17,9 @@ const handler = async (req: Request): Promise<Response> => {
   const url = new URL(req.url);
   const path = url.pathname;
 
+  if (method === "") {
+  }
+
   return new Response("Endpoint not found");
 };
 
